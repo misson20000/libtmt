@@ -228,8 +228,8 @@ Data Types and Enumerations
      */
     typedef struct TMTLINE TMTLINE;
     struct TMTLINE{
-        bool dirty;     /* line has changed since it was last drawn */
-        TMTCHAR chars;  /* the contents of the line                 */
+        bool dirty;      /* line has changed since it was last drawn */
+        TMTCHAR chars[]; /* the contents of the line                 */
     };
 
     /* a virtual terminal screen image */
