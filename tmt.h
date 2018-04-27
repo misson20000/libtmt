@@ -28,6 +28,10 @@
 #ifndef TMT_H
 #define TMT_H
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 #include <stdbool.h>
 #include <stddef.h>
 #include <wchar.h>
@@ -136,5 +140,9 @@ const TMTSCREEN *tmt_screen(const TMT *vt);
 const TMTPOINT *tmt_cursor(const TMT *vt);
 void tmt_clean(TMT *vt);
 void tmt_reset(TMT *vt);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
